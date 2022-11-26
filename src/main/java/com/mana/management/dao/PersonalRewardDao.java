@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface PersonalRewardDao {
 
-    int deleteByPrimaryKey(Integer id);
+/*    int deleteByPrimaryKey(Integer id);
 
 
     int insert(PersonalReward record);
@@ -28,5 +28,5 @@ public interface PersonalRewardDao {
     List<PersonalReward> selectAll(@Param("year") int year, @Param("month") int month,
                                    @Param("departmentName") String departmentName, @Param("personalId") int personalId);
 
-    int deleteByIdIn(@Param("idList") Collection<Integer> idList);
+    int deleteByIdIn(@Param("idList") Collection<Integer> idList);*/
 }

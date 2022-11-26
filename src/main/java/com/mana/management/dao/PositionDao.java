@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface PositionDao {
 
-    int deleteByPrimaryKey(Integer id);
+/*    int deleteByPrimaryKey(Integer id);
 
     int insert(Position record);
 
@@ -27,5 +27,5 @@ public interface PositionDao {
 
     int deleteByIdIn(@Param("idList") Collection<Integer> idList);
 
-    List<PositionSelectVo> selectAllByDepartmentId(@Param("departmentId") Integer departmentId);
+    List<PositionSelectVo> selectAllByDepartmentId(@Param("departmentId") Integer departmentId);*/
 }
