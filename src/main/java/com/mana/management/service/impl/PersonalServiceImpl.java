@@ -2,6 +2,7 @@ package com.mana.management.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.mana.management.dao.PersonalDao;
 import com.mana.management.enums.ResultEnum;
 import com.mana.management.exception.BaseException;
 import com.mana.management.service.PersonalService;
