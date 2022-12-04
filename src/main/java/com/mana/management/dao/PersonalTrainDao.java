@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 public interface PersonalTrainDao {
-
+/*
     int deleteByPrimaryKey(Integer id);
 
 
@@ -27,5 +27,5 @@ public interface PersonalTrainDao {
     List<PersonalTrain> selectAll(@Param("departmentName") String departmentName, @Param("personalId") Integer personalId,
                                                   @Param("beginDate") Date beginDate, @Param("endDate") Date endDate);
 
-    int deleteByIdIn(@Param("idList") Collection<Integer> idList);
+    int deleteByIdIn(@Param("idList") Collection<Integer> idList);*/
 }
