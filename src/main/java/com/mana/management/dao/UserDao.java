@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public interface UserDao {
-/*
+
     int deleteByPrimaryKey(Integer id);
 
 
@@ -30,5 +30,5 @@ public interface UserDao {
 
     List<UserVo> selectAll();
 
-    int deleteByIdIn(@Param("idList") Collection<Integer> idList);*/
+    int deleteByIdIn(@Param("idList") Collection<Integer> idList);
 }

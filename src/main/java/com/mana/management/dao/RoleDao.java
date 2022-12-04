@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface RoleDao {
 
-  /*  int deleteByPrimaryKey(Integer id);
+   int deleteByPrimaryKey(Integer id);
 
 
     int insert(Role record);
@@ -24,5 +24,5 @@ public interface RoleDao {
 
     int updateByPrimaryKey(Role record);
 
-    List<Role> selectAll();*/
+    List<Role> selectAll();
 }
