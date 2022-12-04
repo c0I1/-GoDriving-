@@ -7,16 +7,13 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * @TableName personal_train
- */
 @Data
 public class PersonalTrain implements Serializable {
 
     private Integer id;
 
-    /*
-    员工id
+    /**
+     * 员工id
      */
     private Integer personalId;
 
