@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>主页</title>
+    <!-- <link rel="stylesheet" href="../../layuimini/lib/layui-v2.5.5/css/layui.css" media="all" /> -->
+  </head>
+  <style>
+    :root{
+      --left-color:rgb(40,144,233);
+      --right-color:rgb(255,177,35);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box{
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+    }
+    .box .text{
+      width: 80vw;
+      font-size: 7vw;
+      margin: 0px 10vw;
+    }
+    .box .title{
+      font-size: 10vw;
+    }
+    #left-box{
+      width: 70%;
+      background-color: var(--left-color);
+      z-index: 10;
+    }
+    #left-box .text{
+      color: #f3f3f3;
+    }
+    #left-box .title{
+      color: var(--right-color);
+    }
+    #right-box{
+      background-color: var(--right-color);
+      
+    }
+    #right-box .text{
+color: #3a3a3a;
+    }
+    #right-box .title{
+      color: var(--left-color);
+    }
+
+  </style>
+  <body>
+    <div class="layui-container">
+      <div class="layui-row">
+        <div class="layui-col-md4"></div>
+        <div class="layui-col-md4 layui-col-md-offset4">
+          <div id="left-box" class="box">
+              <h2 class="text">
+                papitube人事管理系统<br>
+                <span id="user-l" class="title"></span>
+              </h2>
+          </div>
+          <div id="right-box" class="box">
+            <h2 class="text">
+              papitube人事管理系统<br>
+              <span id="user-r" class="title"></span>
+            </h2>
+        </div>
+          <!-- <h1>
+            欢迎登录
+            <a href="javascript:;" id="user"></a>
+            -papitube人事管理系统
+          </h1> -->
+        </div>
+      </div>
+    </div>
+    <script>
+      const left=document.getElementById('left-box');
+      const handleMove=(e)=>{
+        left.style.width=`${(e.pageX/window.innerWidth)*100}%`;
+      };
+      document.onmousemove=(e)=>{
+        handleMove(e);
+      };
+      document.ontouchmove=(e)=>{
+        handleMove(e.touches[0]);
+      };
+    </script>
+    <script src="../../../layuimini/lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+    <script src="../layuimini/js/lay-config.js?v=2.0.0" charset="utf-8"></script>
+
+    <script>
+      layui.use(["jquery", "layer", "miniAdmin", "miniTongji", "common"], function () {
+        var $ = layui.jquery,
+          layer = layui.layer,
+          miniAdmin = layui.miniAdmin,
+          miniTongji = layui.miniTongji,
+          common = layui.common;
+
+        layer.ready(function () {
+          common.ajax(common.api + "/user/get", null, function (data) {
+            $("#user-l").html("欢迎"+data.data);
+            $("#user-r").html("欢迎"+data.data);
+          });
+        });
+      });
+    </script>
+    
+  </body>
+</html>
