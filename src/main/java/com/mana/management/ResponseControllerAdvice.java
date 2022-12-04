@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 
-@RestControllerAdvice(basePackages = {"cn.timelost.hr.controller"}) // 注意哦，这里要加上需要扫描的包
+@RestControllerAdvice(basePackages = {"com.mana.management.controller"})
 public class ResponseControllerAdvice implements ResponseBodyAdvice<Object> {
     @Override
     public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> aClass) {

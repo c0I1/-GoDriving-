@@ -33,12 +33,6 @@ public class ShiroConfig {
         // 使用自己的realm
         manager.setRealm(customRealm());
         //注入缓存管理器
-//        manager.setCacheManager(ehCacheManager());
-//        manager.setCacheManager(redisCacheManager());
-        /*
-         * 关闭shiro自带的session，详情见文档
-         * http://shiro.apache.org/session-management.html#SessionManagement-StatelessApplications%28Sessionless%29
-         */
         DefaultSubjectDAO subjectDAO = new DefaultSubjectDAO();
         DefaultSessionStorageEvaluator defaultSessionStorageEvaluator = new DefaultSessionStorageEvaluator();
         defaultSessionStorageEvaluator.setSessionStorageEnabled(false);
