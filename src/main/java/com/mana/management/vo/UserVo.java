@@ -3,11 +3,6 @@ package com.mana.management.vo;
 import lombok.Data;
 
 import java.io.Serializable;
-
-/**
- * @author: Jyf
- * @Date: 2021/2/20 17:39
- */
 @Data
 public class UserVo implements Serializable {
 

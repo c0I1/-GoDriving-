@@ -5,10 +5,6 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author: Jyf
- * @Date: 2021/1/27 19:31
- */
 @Data
 public class PositionVo implements Serializable {
 

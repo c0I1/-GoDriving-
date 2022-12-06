@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author: Jyf
- * @Date: 2021/1/27 23:21
- */
 @Data
 public class DepartmentSelectVo implements Serializable {
 
