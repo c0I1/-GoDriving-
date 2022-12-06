@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface PersonalSalaryDao {
 
-/*    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(Integer id);
 
 
     int insert(PersonalSalary record);
@@ -27,5 +27,5 @@ public interface PersonalSalaryDao {
             @Param("year") Integer year, @Param("month") Integer month,
             @Param("departmentName") String departmentName, @Param("personalId") Integer personalId);
 
-    int deleteByIdIn(@Param("idList") Collection<Integer> idList);*/
+    int deleteByIdIn(@Param("idList") Collection<Integer> idList);
 }
