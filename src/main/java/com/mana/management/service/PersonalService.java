@@ -3,6 +3,7 @@ package com.mana.management.service;
 import com.github.pagehelper.PageInfo;
 import com.mana.management.vo.PersonalSelectVo;
 import com.mana.management.vo.PersonalVo;
+import com.mana.management.vo.input.PersonalForm;
 
 import java.util.Collection;
 import java.util.List;

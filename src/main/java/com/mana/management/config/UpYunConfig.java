@@ -1,4 +1,4 @@
-package com.mana.management;
+package com.mana.management.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

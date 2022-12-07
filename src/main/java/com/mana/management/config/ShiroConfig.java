@@ -1,4 +1,4 @@
-package com.mana.management;
+package com.mana.management.config;
 
 import com.mana.management.realm.UserRealm;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;

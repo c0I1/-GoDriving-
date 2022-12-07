@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface RecruitmentDao {
 
-/*    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(Integer id);
 
 
     int insert(Recruitment record);
@@ -26,5 +26,5 @@ public interface RecruitmentDao {
 
     List<Recruitment> selectAll(@Param("departmentName") String departmentName, @Param("recruitStatus") Integer recruitStatus);
 
-    int deleteByIdIn(@Param("idList") Collection<Integer> idList);*/
+    int deleteByIdIn(@Param("idList") Collection<Integer> idList);
 }

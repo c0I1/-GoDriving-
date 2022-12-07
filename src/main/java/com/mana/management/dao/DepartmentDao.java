@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface DepartmentDao {
 
-   /* int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(Integer id);
 
 
     int insert(Department record);
@@ -31,5 +31,5 @@ public interface DepartmentDao {
 
     List<Department> selectAllByDepartmentNameLike(@Param("departmentName") String departmentName);
 
-    List<DepartmentSelectVo> selectAllSelect();*/
+    List<DepartmentSelectVo> selectAllSelect();
 }

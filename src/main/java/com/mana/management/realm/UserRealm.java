@@ -1,11 +1,11 @@
 package com.mana.management.realm;
 
-import com.mana.management.JWTToken;
+import com.mana.management.config.JWTToken;
+import com.mana.management.config.utils.JWTUtils;
 import com.mana.management.dao.RoleDao;
 import com.mana.management.pojo.Role;
 import com.mana.management.pojo.User;
 import com.mana.management.service.UserService;
-import com.mana.management.utils.JWTUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
